@@ -1,4 +1,4 @@
-package classesExamples;
+package amusementPark;
 
 public class Car {
 
