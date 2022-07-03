@@ -2,6 +2,10 @@ package encapsulation;
 
 public class CRA {
 
-	//Added by Athira
-	//  instanceOf 
+	boolean isAllowedToModifySin;
+
+	public CRA(boolean isAllowedToModifySin) {
+		super();
+		this.isAllowedToModifySin = isAllowedToModifySin;
+	}
 }

@@ -25,9 +25,9 @@ public class Employee {
 	
 	//Change to public void setSinNumber(int sinNumber, CRA cra, int pin)
 
-	public void setSinNumber(int sinNumber, boolean isCRA, int pin) {
+	public void setSinNumber(int sinNumber, CRA cra, int pin) {
 		
-		if(isCRA && sinNumber != 0 && pin ==1234) {
+		if(cra.isAllowedToModifySin && sinNumber != 0 && pin ==1234) {
 			this.sinNumber = sinNumber;
 		}else {
 			System.out.println("You don't have authority to change Sin number ");
