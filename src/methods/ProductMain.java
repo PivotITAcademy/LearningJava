@@ -7,12 +7,17 @@ public class ProductMain {
 		
 		Products product = new Products();
 		
+		System.out.println(product.brand);
+		
 		//Display the products
 		product.displayProducts();
 		
-		//Check if product is present ;
 		
-		product.checkProductExists();
+		//Let's go ahead and add it to the cart
+		
+		//But before adding to the cart let's check if it's in stock;
+		
+		product.addToCart();
 		
 
 	}

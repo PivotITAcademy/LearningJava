@@ -8,6 +8,8 @@ public class PhoneBook {
 	// Create an array of data type long to store 20 different values
 	// DataType variable = new DataType[Length of the array]
 	long[] phoneNumbers = new long[4];
+	long[] phone_Numbers = {9990000,9999233,3233333,99977733};
+	
 	Scanner sc = new Scanner(System.in);
 
 	// To Access a value or to store the value we will use the index
