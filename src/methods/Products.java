@@ -15,14 +15,18 @@ public class Products {
 	String[] googleProducts;
 
 	Scanner sc = new Scanner(System.in);
+	
+	ArrayUtilityClass arrayUtilClass = new ArrayUtilityClass();
 
 	String brand;
 	String selectedProduct=null;
 
 	// Display the products
-	void displayProducts() {
+	 void displayProducts() {
 
 		boolean isValidBrandSelected = false;
+		
+		boolean isValidProductSelected = false;
 
 		while (!isValidBrandSelected) {
 
@@ -35,31 +39,30 @@ public class Products {
 			if (brand.equalsIgnoreCase("Samsung")) {
 				isValidBrandSelected = true;
 				System.out.println("Products available for " + brand);
-				for (int i = 0; i < samsungProducts.length; i++) {
-					System.out.println(samsungProducts[i]);
-					
-					
-				}
-				checkProductExists();
+				//printArray(samsungProducts);
+				arrayUtilClass.printArray(samsungProducts);
+				
+				
+				
+				isValidProductSelected = arrayUtilClass.checkProductExists(samsungProducts);
+				
 			} else if (brand.equalsIgnoreCase("apple")) {
 				isValidBrandSelected = true;
-				for (int i = 0; i < appleProducts.length; i++) {
-					System.out.println("Products available for " + brand);
-					System.out.println(appleProducts[i]);
-					
-					
-				}
+				arrayUtilClass.printArray(appleProducts);
 				checkProductExists();
 			} else {
 
 				System.out.println("Brand not available");
 			}
-
+			
+			if (isValidProductSelected) {
+				System.out.println(  "product exist in the list ");
+			}
 		}
 	}
 
 	// Check the product exist or not
-	void checkProductExists() {
+	private void checkProductExists() {
 
 		boolean isValidProductSelected = false;
 		
@@ -83,9 +86,7 @@ public class Products {
 				}
 			}
 		}
-		if (isValidProductSelected) {
-			System.out.println(selectedProduct + " exist in the list ");
-		}
+		
 
 	}
 	

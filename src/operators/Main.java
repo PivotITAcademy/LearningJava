@@ -1,5 +1,7 @@
 package operators;
 
+import methods.ArrayUtilityClass;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -11,6 +13,9 @@ public class Main {
 		arithematicOperators.divide();
 		arithematicOperators.division();
 
+		ArrayUtilityClass arrayUtilityClass = new ArrayUtilityClass();
+		
+		
 	}
 
 }

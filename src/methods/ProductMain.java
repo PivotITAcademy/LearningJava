@@ -17,7 +17,7 @@ public class ProductMain {
 		
 		//But before adding to the cart let's check if it's in stock;
 		
-		product.addToCart();
+	//	product.addToCart();
 		
 
 	}
