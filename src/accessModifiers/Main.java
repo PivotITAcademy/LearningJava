@@ -6,20 +6,23 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		BankAccount account = new BankAccount();
+		BankAccount ketakiAccount = new BankAccount("Ketaki","09908097",500.44,1234);
 		Scanner sc = new Scanner(System.in);
 		
-		account.accountNumber="798799877";
-		account.atmPin=1234;
+//		ketakiAccount.accountNumber="798799877";
+//		ketakiAccount.balance=500;
+//		ketakiAccount.name="ketaki";
+		
+
 		
 		Hacker hacker = new Hacker();
-		hacker.hack(account);
+		hacker.hack(ketakiAccount);
 		
 		System.out.println("Enter pin");
 		
 		int pin =sc.nextInt();
 		
-		account.checkPin(pin);
+		ketakiAccount.checkPin(pin);
 		
 	}
 
