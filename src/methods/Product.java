@@ -3,17 +3,12 @@ package methods;
 //This class represents a single product
 public class Product {
 
-	@Override
-	public String toString() {
-		return "Product [name=" + name + ", quantity=" + quantity + ", brand=" + brand + "]";
-	}
-
 	String name;
 
 	int quantity;
 
 	String brand;
-	
+
 	boolean inStock;
 
 	public Product(String name, int quantity, String brand) {
@@ -32,5 +27,19 @@ public class Product {
 //			return false;
 //		}
 //	}
+
+	@Override
+	public String toString() {
+		return "Product [name=" + name + ", quantity=" + quantity + ", brand=" + brand + "]";
+	}
+
+	public String printModels(String brandName) {
+
+		if (brandName.equalsIgnoreCase(brand)) {
+			return name;
+		} else {
+			return null;
+		}
+	}
 
 }

@@ -72,7 +72,9 @@ public class Products {
 
 			if (brand.equalsIgnoreCase("Samsung")) {
 				for (int i = 0; i < samsungProducts.length; i++) {
-					if (samsungProducts[i].equalsIgnoreCase(selectedProduct)) {
+					
+					String s= samsungProducts[i];
+					if (s.equalsIgnoreCase(selectedProduct)) {
 						isValidProductSelected = true;
 						break;
 					}
@@ -96,7 +98,7 @@ public class Products {
 		
 		boolean inStock=false;
 		
-		Product selectedPrdct = new Product();
+		Product selectedPrdct = new Product("", 0, "");
 		selectedPrdct.name=selectedProduct;
 		
 		for(int i=0;i<samsungProducts.length;i++) {
