@@ -10,4 +10,9 @@ public class RBC extends BankOfCanada {
 		System.out.println("RBC provides Rewards Program");
 	}
 
+	@Override
+	public double getInterestRate() {
+		return interestRate - 1.5;
+	}
+
 }
