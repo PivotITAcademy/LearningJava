@@ -1,12 +1,12 @@
 package abstractionExample2;
 
-public class ClientManagement {
+public class ClientEngagement {
 
 	private String clientName;
 	private int hoursWorked;
 	private double anticipatedRevenue;
 
-	public ClientManagement(String clientName, int hoursWorked, double anticipatedRevenue) {
+	public ClientEngagement(String clientName, int hoursWorked, double anticipatedRevenue) {
 
 		this.clientName = clientName;
 		this.hoursWorked = hoursWorked;

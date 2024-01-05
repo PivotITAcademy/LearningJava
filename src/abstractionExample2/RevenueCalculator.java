@@ -6,7 +6,7 @@ public class RevenueCalculator {
 	private double monthlyRate = 3500;
 	private double dividend = 0.15;
 
-	public double calculateIncome(String methodOfEngagment, ClientManagement engagement) {
+	public double calculateIncome(String methodOfEngagment, ClientEngagement engagement) {
 		double totalRevenue = 0;
 		switch (methodOfEngagment) {
 		case "Hourly":
