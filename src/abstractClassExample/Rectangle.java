@@ -17,5 +17,7 @@ public class Rectangle extends Shape {
 		// TODO Auto-generated method stub
 		return length * breadth;
 	}
+	
+	
 
 }

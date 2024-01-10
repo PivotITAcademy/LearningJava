@@ -10,8 +10,8 @@ public abstract class Shape {
 
 	public abstract double calculateArea();
 	
-	public void printShape() {
-		System.out.println("This is : "+shapeName);
+	public static void printShape() {
+		System.out.println("This is : ");
 	}
 
 }
