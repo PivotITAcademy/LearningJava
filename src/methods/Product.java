@@ -5,6 +5,18 @@ public class Product {
 
 	String name;
 
+	public String getName() {
+		return name;
+	}
+
+	public int getQuantity() {
+		return quantity;
+	}
+
+	public String getBrand() {
+		return brand;
+	}
+
 	int quantity;
 
 	String brand;
